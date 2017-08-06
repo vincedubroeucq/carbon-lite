@@ -1,0 +1,582 @@
+# Copyright (C) 2016 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Carbon Lite 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2017-07-26 11:47+0200\n"
+"PO-Revision-Date: 2017-07-26 11:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: Vincent Dubroeucq <vincent@vincentdubroeucq.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_x:1,2c;_ex:1,2c;_n:1,2;"
+"_nx:4c,1,2;_n_noop:1,2;_nx_noop:4c,1,2;_ngettext_noop:1,2;"
+"translate_nooped_plural;esc_html__;esc_html_e;esc_html_x:1,2c;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;number_format_i18n;date_i18n\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .sass-cache\n"
+"X-Poedit-SearchPathExcluded-1: css\n"
+"X-Poedit-SearchPathExcluded-2: js\n"
+"X-Poedit-SearchPathExcluded-3: prototype\n"
+"X-Poedit-SearchPathExcluded-4: sass\n"
+"X-Poedit-SearchPathExcluded-5: carbon-lite\n"
+"X-Poedit-SearchPathExcluded-6: carbon-lite-archive\n"
+"X-Poedit-SearchPathExcluded-7: node_modules\n"
+
+#: 404.php:18
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Il semble que rien n’ait été trouvé ici. Essayez un des liens ci-dessous ou "
+"une recherche, peut-être?"
+
+#: 404.php:30
+msgid "Most Used Categories"
+msgstr "Catégories les plus utilisées"
+
+#: 404.php:48
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Jetez un oeil du côté des archives mensuelles. %1$s"
+
+#: archive.php:27 home.php:26 index.php:31 search.php:32
+msgid "Older posts"
+msgstr "Articles précédents"
+
+#: archive.php:28 home.php:27 index.php:32 search.php:33
+msgid "Newer posts"
+msgstr "Articles suivants"
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Une réponse à &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s réponses à &ldquo;%2$s&rdquo;"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: functions.php:55
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:56
+msgid "Main Social Menu"
+msgstr "Menu des réseaux sociaux principal"
+
+#: functions.php:57
+msgid "Footer Social Menu"
+msgstr "Menu des réseaux sociaux du pied de page"
+
+#: functions.php:129
+msgid "Blog Sidebar"
+msgstr "Barre latérale du blog"
+
+#: functions.php:131
+msgid "Add widgets for your blog here."
+msgstr "Ajouter des widgets pour votre blog ici."
+
+#: functions.php:139
+msgid "Menu Widgets"
+msgstr "Widgets du menu"
+
+#: functions.php:141
+msgid "Add widgets you want in the menu panel here."
+msgstr "Ajoutez les widgets que vous voulez dans le panneau du menu."
+
+#: functions.php:149
+msgid "Footer Widgets"
+msgstr "Widgets du pied de page"
+
+#: functions.php:151
+msgid "Add widgets you want in the footer here."
+msgstr "Ajoutez les widgets que vous voulez en pied de page."
+
+#: functions.php:175
+msgctxt "Audiowide heading font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:181
+msgctxt "Exo2 body font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:187
+msgctxt "Space Mono mono font: on or off"
+msgid "on"
+msgstr "on"
+
+#: header.php:27
+msgid "Skip to content"
+msgstr "Passer directement au contenu"
+
+#: header.php:41 header.php:46
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:49
+msgctxt "Menu close button"
+msgid "Close"
+msgstr "Fermer"
+
+#: inc/customizer.php:28
+msgid "General color scheme"
+msgstr "Jeu de couleurs général"
+
+#: inc/customizer.php:29
+msgid "Pick your favorite color. This setting affects all colored accents."
+msgstr ""
+"Choisissez votre couleur favorie. Ce réglages affecte toutes les couleurs "
+"accentuelles."
+
+#: inc/customizer.php:41
+msgid "Typography"
+msgstr "Typographie"
+
+#: inc/customizer.php:42
+msgid "Choose your text and icon preferences here."
+msgstr "Choisissez vos réglages de texte et d'icône ici."
+
+#: inc/customizer.php:53
+msgid "Body text size"
+msgstr "Taille du texte principal"
+
+#: inc/customizer.php:54
+msgid ""
+"Choose your prefered body text size. Note that this setting also affects the "
+"size of headings and icons."
+msgstr ""
+"Choisissez votre taille de texte préférée. Notez que ce réglages affecte "
+"aussi la taille des titres et icônes."
+
+#: inc/customizer.php:67
+msgid "Headings size"
+msgstr "Taille des titres"
+
+#: inc/customizer.php:68
+msgid "Choose your favorite heading size. Be bold."
+msgstr "Choisissez votre taille de titres préférée. Osez."
+
+#: inc/customizer.php:81
+msgid "Icons size"
+msgstr "Taille des icônes"
+
+#: inc/customizer.php:82
+msgid "Choose how you want your icons. Fat or super fat ?"
+msgstr "Choisissez la taille de vos icônes. Grosse ou super grosses ?"
+
+#: inc/customizer.php:94
+msgid "Display and layout"
+msgstr "Affichage et mise en page"
+
+#: inc/customizer.php:95
+msgid "Choose your layout and display preferences here."
+msgstr "Choisissez votre mise en page et vos réglages d'affichage ici."
+
+#: inc/customizer.php:105
+msgid "Menu search field"
+msgstr "Champ de recherche du menu"
+
+#: inc/customizer.php:106
+msgid "Show the search field in menu area ?"
+msgstr "Afficher le champ de recherche dans la zone de menu ?"
+
+#: inc/customizer.php:118
+msgid "Header height"
+msgstr "Hauteur de l'entête"
+
+#: inc/customizer.php:119
+msgid "Choose the height of your header area."
+msgstr "Choisissez la hauteur de la zone d'entête."
+
+#: inc/customizer.php:132
+msgid "Content content area size"
+msgstr "Taille de la zone de contenu"
+
+#: inc/customizer.php:133
+msgid "Choose the width of your posts area."
+msgstr "Choisissez la largeur de la zone de contenu."
+
+#: inc/customizer.php:146
+msgid "Sidebar position"
+msgstr "Position de la barre latérale"
+
+#: inc/customizer.php:147
+msgid "Choose where you want to place your blog sidebar."
+msgstr "Choisissez où vous voulez placer la barre latérale de votre blog."
+
+#: inc/customizer.php:159
+msgid "Content display option"
+msgstr "Options d'affichage du contenu"
+
+#: inc/customizer.php:160
+msgid "Choose what content you want to display on your blog page."
+msgstr ""
+"Choisissez le contenu que vous voulez afficher sur la page d'accueil de "
+"votre blog."
+
+#: inc/customizer.php:174
+msgid "Footer text"
+msgstr "Texte du pied de page"
+
+#: inc/customizer.php:175
+msgid ""
+"Type in the footer credits you need, or leave blank for the default theme "
+"credits.<br />Simple HTML tags, like &lt;strong&gt;,&lt;em&gt;,&lt;a&gt; are "
+"allowed."
+msgstr ""
+"Entrez le texte de pied de page dont vous avez besoin, ou laissez vide pour "
+"afficher le texte par défaut. <br /> Les balises HTML simples comme &lt;"
+"strong&gt;,&lt;em&gt;,&lt;a&gt; sont autorisées."
+
+#: inc/customizer.php:226
+msgid "Default (soft black)"
+msgstr "Par défaut (noir clair)"
+
+#: inc/customizer.php:227
+msgid "Red"
+msgstr "Rouge"
+
+#: inc/customizer.php:228
+msgid "Blue"
+msgstr "Bleu"
+
+#: inc/customizer.php:229
+msgid "Green"
+msgstr "Vert"
+
+#: inc/customizer.php:230
+msgid "Orange"
+msgstr "Orange"
+
+#: inc/customizer.php:231
+msgid "Yellow"
+msgstr "Jaune"
+
+#: inc/customizer.php:238 inc/customizer.php:247 inc/customizer.php:257
+msgid "Small"
+msgstr "Petit"
+
+#: inc/customizer.php:239 inc/customizer.php:248 inc/customizer.php:258
+msgid "Medium"
+msgstr "Moyen"
+
+#: inc/customizer.php:240 inc/customizer.php:249 inc/customizer.php:259
+msgid "Large"
+msgstr "Grand"
+
+#: inc/customizer.php:250
+msgid "Huge"
+msgstr "Enorme"
+
+#: inc/customizer.php:266
+msgid "Thin header"
+msgstr "Entête fine"
+
+#: inc/customizer.php:267
+msgid "Standard header"
+msgstr "Entête standard"
+
+#: inc/customizer.php:274
+msgid "Narrower content area"
+msgstr "Zone de contenu plus étroite"
+
+#: inc/customizer.php:275
+msgid "Medium content area"
+msgstr "Zone de contenu moyenne"
+
+#: inc/customizer.php:276
+msgid "Wider content area"
+msgstr "Zone de contenu plus large"
+
+#: inc/customizer.php:283
+msgid "Sidebar on the left"
+msgstr "Barre latérale à gauche"
+
+#: inc/customizer.php:284
+msgid "Sidebar on the right"
+msgstr "Barre latérale à droite"
+
+#: inc/customizer.php:285
+msgid "No sidebar"
+msgstr "Pas de barre latérale"
+
+#: inc/customizer.php:292
+msgid "No content (just title and metas)"
+msgstr "Pas de contenu (seulement les titres et méta)"
+
+#: inc/customizer.php:293
+msgid "Featured image, title and metas"
+msgstr "Image à la une, titre et méta"
+
+#: inc/customizer.php:294
+msgid "An excerpt of the post"
+msgstr "Extrait de l'article"
+
+#: inc/customizer.php:295
+msgid "The full post"
+msgstr "Article entier"
+
+#: inc/extras.php:81
+msgctxt "Search form label for screen readers"
+msgid "Search for:"
+msgstr "Cherchez :"
+
+#: inc/extras.php:82
+msgctxt "Search form input"
+msgid "Search &hellip;"
+msgstr "Recherche &hellip;"
+
+#: inc/extras.php:162
+#, php-format
+msgid "Continue reading %s"
+msgstr "Continuer la lecture de %s"
+
+#: inc/extras.php:252
+#, php-format
+msgid "On %1$s at %2$s"
+msgstr "Le %1$s à %2$s"
+
+#: inc/extras.php:256
+msgid "Edit"
+msgstr "Modifier"
+
+#: inc/extras.php:260
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: inc/template-tags.php:49
+msgid "Oops! That's a 404 !"
+msgstr "Oops ! C'est une 404 (page non trouvée) !"
+
+#: inc/template-tags.php:62
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour : %s"
+
+#: inc/template-tags.php:97
+#, php-format
+msgctxt "post update date"
+msgid " (Updated on %s)"
+msgstr " (Mis à jour le %s)"
+
+#: inc/template-tags.php:104
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publié le %s"
+
+#: inc/template-tags.php:111 inc/template-tags.php:198
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:114
+#, php-format
+msgctxt "Category list"
+msgid " in %s"
+msgstr " dans %s"
+
+#: inc/template-tags.php:138
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#: inc/template-tags.php:201
+msgid "Tags: "
+msgstr "Étiquettes : "
+
+#: inc/template-tags.php:236
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/template-tags.php:236
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: inc/template-tags.php:239
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème: %1$s par %2$s."
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found !"
+msgstr "Rien !"
+
+#: template-parts/content-none.php:22
+msgid "Ready to publish your first post?"
+msgstr "Prêt(e) à publier votre premier article ?"
+
+#: template-parts/content-none.php:25
+msgid "Get started here !"
+msgstr "C'est parti !"
+
+#: template-parts/content-none.php:31
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais rien ne correspond à votre requête. Essayez avec d'autres mots-"
+"clés."
+
+#: template-parts/content-none.php:37
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Impossible de trouver ce que vous demandez. Essayez une recherche."
+
+#: template-parts/content-page.php:20 template-parts/content.php:35
+msgid "Pages:"
+msgstr "Pages:"
+
+#~ msgid "Widgets for %s"
+#~ msgstr "Widgets pour %s"
+
+#~ msgid "Add widgets you want in your content here."
+#~ msgstr "Ajoutez les widgets que vous souhaitez pour votre contenu ici."
+
+#~ msgid "Carbon Builder"
+#~ msgstr "Carbon Builder"
+
+#~ msgid ""
+#~ "To help you build a custom layout for this post, you can use the Carbon "
+#~ "Builder. Simply visit this page on the front end and open up the "
+#~ "customizer. Then open your widget tabs. You'll see a new widget area "
+#~ "registered for your post."
+#~ msgstr ""
+#~ "Pour vous aider à construire une mise en page personnalisée pour cette "
+#~ "page, vous pouvez utiliser le Carbon Builder. Visitez simplement cette "
+#~ "page sur le devant de votre site, et ouvrez l'outil de personnalisation "
+#~ "de WordPress. Puis ouvrez la section des widgets. Vous pourrez voir "
+#~ "qu'une nouvelle zone de widgets est enregistrée pour votre publication."
+
+#~ msgid ""
+#~ "You can use any widget or the Carbon Builder's new custom widget to build "
+#~ "your post content with a unique and more complex layout and content. Just "
+#~ "hit 'Save and Publish' when you're done."
+#~ msgstr ""
+#~ "Vous pouvez utiliser n'importe quel widget ou opter pour les widgets "
+#~ "personnalisés du Carbon Builder pour construire votre contenu avec une "
+#~ "mise en page plus riche et complexe. Puis cliquez sur 'Enregistrer et "
+#~ "publier' et c'est tout."
+
+#~ msgid "Go customize this post !"
+#~ msgstr "Personnalisez cette publication !"
+
+#~ msgid "The Carbon Builder for this post is available in the customizer."
+#~ msgstr ""
+#~ "Le Carbon Builder pour cette publication est disponible dans l'outil de "
+#~ "personnalisation."
+
+#~ msgid "Read more"
+#~ msgstr "Lire la suite"
+
+#~ msgid "Read-more"
+#~ msgstr "Lire la suite"
+
+#~ msgid "Carbon Page"
+#~ msgstr "Carbon Page"
+
+#~ msgid "Features a page content with simple display options"
+#~ msgstr ""
+#~ "Mets en avant le contenu d'une page, avec de simples options de mise en "
+#~ "page"
+
+#~ msgid "Title:"
+#~ msgstr "Titre:"
+
+#~ msgid "Choose a page :"
+#~ msgstr "Choisissez une page :"
+
+#~ msgid "Thumbnail : "
+#~ msgstr "Image à la une : "
+
+#~ msgid "Content size : "
+#~ msgstr "Taille de la zone de contenu : "
+
+#~ msgid "Text style : "
+#~ msgstr "Style du texte : "
+
+#~ msgid "Display full page ? "
+#~ msgstr "Afficher la page en entier ? "
+
+#~ msgid "No thumbnail"
+#~ msgstr "Pas d'image à la une"
+
+#~ msgid "Left thumbnail"
+#~ msgstr "Image à gauche"
+
+#~ msgid "Right thumbnail"
+#~ msgstr "Image à droite"
+
+#~ msgid "One third"
+#~ msgstr "Un tiers"
+
+#~ msgid "One half"
+#~ msgstr "Un demi"
+
+#~ msgid "Two thirds"
+#~ msgstr "Deux tiers"
+
+#~ msgid "Centered text"
+#~ msgstr "Centré"
+
+#~ msgid "Left-aligned"
+#~ msgstr "Aligné à gauche"
+
+#~ msgid "Right-aligned"
+#~ msgstr "Aligné à droite"
+
+#~ msgid "Carbon Post"
+#~ msgstr "Carbon Post"
+
+#~ msgid "Features a blog post with simple display options"
+#~ msgstr ""
+#~ "Mets en avant le contenu d'un article de blog, avec de simples options de "
+#~ "mise en page"
+
+#~ msgid "Choose a post :"
+#~ msgstr "Choisissez un article :"
+
+#~ msgid "Display Meta Information ?"
+#~ msgstr "Afficher les méta-données ?"
+
+#~ msgid "Carbon Recent Posts"
+#~ msgstr "Carbon Recent Posts"
+
+#~ msgid ""
+#~ "Displays some of your most recent posts in your sidebar or other "
+#~ "widgetized area."
+#~ msgstr ""
+#~ "Affiche vos articles les plus récents dans votre barre latérale ou autre "
+#~ "zone widgetizée."
+
+#~ msgid "Number of posts to display : "
+#~ msgstr "Nombre d'articles à afficher : "
+
+#~ msgid "2 posts"
+#~ msgstr "2 articles"
+
+#~ msgid "3 posts"
+#~ msgstr "3 articles"
+
+#~ msgid "4 posts"
+#~ msgstr "4 articles"
+
+#~ msgid "Display Thumbnail ?"
+#~ msgstr "Afficher l'image à la une ?"
+
+#~ msgid "Display Excerpt ?"
+#~ msgstr "Afficher l'extrait ?"

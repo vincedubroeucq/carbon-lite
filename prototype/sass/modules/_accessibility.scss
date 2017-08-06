@@ -1,0 +1,29 @@
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		align-items: center;
+		background-color: $color__background-body;
+		clip: auto !important;
+		color: $color__text-main;
+		display: flex;
+		height: auto;
+		left: 3em;
+		padding: 1em 2em;
+		top: 3em;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+

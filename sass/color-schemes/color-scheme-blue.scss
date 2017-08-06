@@ -1,0 +1,344 @@
+$color__text-main: #1E3FB5;
+$color__text-screen: #21759b;
+$color__text-input: lighten( $color__text-main, 20%);
+$color__text-input-focus: $color__text-main;
+$color__link: $color__text-main;
+$color__link-visited: darken( $color__link, 20% );
+$color__link-hover: $color__link-visited;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ddd;
+$color__background-button: $color__text-main;
+$color__background-pre: lighten( $color__text-main, 70% );
+$color__background-ins: #fff9c0;
+
+$color__border-button: $color__text-main;
+$color__border-button-hover: $color__text-main;
+$color__border-button-focus: $color__text-main;
+$color__border-input: lighten( $color__text-main, 20%);
+$color__border-input-focus: $color__text-main;
+$color__border-abbr: #666;
+
+$shadow_depth: 3px;
+
+@mixin box-shadow( $depth: $shadow_depth ){
+	box-shadow: $depth $depth $depth lighten( $color__text-main, 40% );
+}
+
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $color__text-main;
+		color: $color__background-body;
+	}
+}
+
+blockquote {
+    @include box-shadow;
+}
+
+td {
+    border: 1px solid $color__text-input;
+}
+
+tr:nth-of-type( 2n+1 ){
+	background-color: $color__background-pre;
+}
+
+tfoot td,
+th {
+	background-color: $color__text-main;
+    border: 1px solid $color__text-input;
+    color: $color__background-body;
+}
+
+pre {
+	background: $color__background-pre;
+	@include box-shadow;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $color__text-main;
+}
+
+mark, ins {
+	background: $color__text-main;
+	color: $color__background-body;
+}
+
+
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: transparent;
+	border: 2px solid $color__border-button;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $color__text-main;
+		border-color: $color__border-button-focus;		
+		@include box-shadow();
+		color: $color__background-body;
+	}
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+select,
+textarea {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+
+	&:focus {
+		box-shadow: 3px 3px 3px $color__border-input;
+		border-color: $color__border-input-focus;
+		color: $color__text-input-focus;
+	}
+}
+
+
+/* Text meant only for screen readers. */
+.screen-reader-text:focus {
+    background-color: $color__background-body;
+    color: $color__text-main;
+}
+
+.site-header {
+    background-color: $color__text-main;
+    color: $color__background-body;
+}
+
+.header-title a {    
+    color: $color__background-body;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: inherit;
+    }
+}
+
+.header-meta a {
+    color: $color__background-body;
+
+    &:hover,
+    &:focus {
+        background-color: $color__background-body;
+		color: $color__text-main;
+    }
+}
+
+.main-navigation {
+	a {
+		color: $color__background-body;
+
+		&:hover,
+        &:focus {
+            background-color: $color__background-body;
+            color: $color__text-main;
+        }
+	}
+
+	.primary-menu {
+
+		a {
+			background-color: transparent;
+			border-bottom: 5px solid transparent;
+			color: $color__background-body;
+		}
+
+		li > a:hover,
+		li > a:focus {
+			border-bottom-color: $color__background-body;
+		}
+	}
+}
+
+.menu-toggle {
+    border-color: $color__background-body;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+    background-color: $color__background-body;
+	color: $color__text-main;
+}
+
+.menu-wrapper {
+	background-color: $color__text-main;
+	border-left: 2px solid lighten( $color__text-main, 10% );
+
+    .social-icons a:hover .icon,
+	.social-icons a:focus .icon {
+		fill: $color__text-main;
+	}
+
+	.button {
+		border: 2px solid $color__background-body;
+		
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $color__background-body;
+			color: $color__text-main;
+		}
+	}
+}
+
+.search-form .icon {
+    color: $color__text-main;
+}
+
+.hentry,
+.no-results,
+.error-404 {
+	background-color: $color__background-body;
+	@include box-shadow();
+}
+
+.entry-header {
+	border-left: 1em solid $color__text-main; 
+}
+
+.entry-footer {
+	border-top: 2px solid $color__background-hr;
+	border-bottom: 2px solid $color__background-hr;
+}
+
+.page-links> span {
+    border: 2px solid $color__border-button;
+}
+
+.posts-navigation,
+.post-navigation {
+    background-color: $color__background-body;
+    @include box-shadow();
+}
+
+.comments-area {
+	background-color: $color__background-body;
+	@include box-shadow();
+}
+
+.comments-pagination .nav-links {
+	& > span {
+		border: 2px solid $color__border-button;
+	}
+
+	& > a {
+		border: 2px solid transparent;
+	}
+}
+
+.sticky,
+.bypostauthor {
+	color: $color__background-body;
+	background-color: $color__text-main;
+
+	a {
+		color: $color__background-body;
+
+		&:hover,
+		&:focus {
+			background-color: $color__background-body;
+			color: $color__text-main;
+		}
+	}
+}
+
+.site-footer {
+    background-color: $color__text-main;
+    border-top: 1px solid lighten( $color__text-main, 10% );
+    color: $color__background-body;
+    
+    a {
+        color: $color__background-body;
+
+        &:hover,
+        &:focus {
+            background-color: $color__background-body;
+            color: $color__text-main;
+        }
+    }
+
+	button,
+    .button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        border-color: $color__background-body;
+    }
+}
+
+.social-icons a {
+    .icon {
+        fill: $color__background-body;
+    }
+
+    &:hover .icon,
+    &:focus .icon {
+        fill: $color__text-main;
+    }
+}
+
+.widget {
+	background-color: $color__background-body;
+	@include box-shadow();
+}
+
+.footer-widget-area {
+	border-bottom: 1px solid lighten( $color__text-main, 10% );
+}
+
+.menu-widget,
+.footer-widget {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.widget_calendar {
+
+    tr:nth-of-type(2n+1),
+    a {
+        color: $color__text-main;
+    }
+    
+    a:hover,
+    a:focus,
+    tfoot a,
+    tfoot a:visited {
+        color: $color__background-body;
+    }
+
+    tfoot a:hover,
+    tfoot a:focus {
+        background-color: $color__background-body;
+        color: $color__text-main;
+	} 
+	
+}

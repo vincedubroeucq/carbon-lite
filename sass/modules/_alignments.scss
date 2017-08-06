@@ -1,0 +1,21 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 1.5em 1.5em 1.5em 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 1.5em 0 1.5em 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+	margin-bottom: 1.5em;
+}
+
+.alignnone {
+	margin: 1.5em 0;
+}

@@ -1,0 +1,25 @@
+body {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-weight: 400;
+	line-height: $font__line-height-body;
+	@include bodyscale( $bodyscale__standard );
+
+	@media screen and (min-width: $breakpoint_laptop) {
+		font-weight: 300;
+	}
+}
+
+.small-body-text {
+	@include bodyscale( $bodyscale__small );
+}
+
+.large-body-text {
+	@include bodyscale( $bodyscale__large );
+}
+
+@import "headings";
+
+@import "copy";
+
+@import "icons";

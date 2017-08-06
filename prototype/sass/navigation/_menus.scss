@@ -1,0 +1,198 @@
+.main-navigation {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 2em;
+	margin: 0 auto;
+	min-width: 0;
+	width: 100%;
+
+    @media screen and (min-width: $breakpoint_desktop){
+        max-width: $breakpoint_desktop;
+		padding: 2em 0;
+	}
+
+	ul {
+		list-style: none;
+		margin-bottom: 3em;
+		padding: 0;
+
+		ul {
+			padding-left: 2em;
+			font-size: .75em;
+			margin-bottom: initial;
+
+			@media screen and (min-width: $breakpoint-tablet){
+				font-size: .85em;
+			}
+		}
+	}
+
+	a {
+		border-bottom: 5px solid transparent;
+		border-radius: 0px;
+		border-top: 5px solid transparent;
+		color: $color__background-body;
+		display: inline-block;
+		padding: .25em 0;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: all .25s ease-in-out;
+	}
+
+	li > a:hover,
+	li > a:focus {
+		border-bottom-color: $color__background-body;
+		font-weight: inherit;
+		outline: none;
+	}
+}
+
+// Logo styles
+.site-logo {
+	line-height: 0;
+	
+	a {
+		border: none;
+		padding: 0;
+	}
+
+	img {
+		max-height: 4em;
+		width: auto;
+	}
+}
+
+// Menu button styles
+.menu-toggle {
+	align-items: center;
+    border-color: $color__background-body;
+    color: $color__background-body;
+	display: flex;
+	margin-left: auto;
+	padding: .5em 1em .5em .5em;
+	text-transform: uppercase;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+    background-color: $color__background-body;
+	color: $color__text-main;
+	outline: none;
+}
+
+// Menu area sliding panel
+.menu-wrapper {
+	background-color: $color__text-main;
+	bottom: 0;
+	height: 100vh;
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 2em;
+	position: fixed;
+	right: -17px;
+	top: 0;
+	transition: all .25s ease-in-out;
+	visibility: hidden;
+	width: 0;
+	z-index: 100;
+	
+	@media screen and (min-width: $breakpoint_desktop){
+		padding: 3em;
+	} 
+
+	.menu-toggle {
+		border: none;
+		padding: 0;
+	}
+}
+
+.main-navigation.toggled .menu-wrapper {
+	max-width: 80vw;
+	opacity: 1;
+	visibility: visible;
+	width: 30em;
+}
+
+.menu-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+
+	@media screen and (min-width: $breakpoint_desktop){
+		margin-bottom: 3em;
+	} 
+}
+
+.menu-title {
+	margin: 0;
+}
+
+.menu-widget-area {
+	.widget {
+		background-color: transparent;
+		padding: 0;
+	}
+}
+
+.search-form {
+	display: flex;
+
+	input {
+		flex: 1;
+		min-width: 0px;
+	}
+
+	.icon {
+		color: $color__text-main;
+		transform: translateX(-3em);
+	}
+}
+
+// Navigation styles when there's no JS.
+.no-js {
+	
+	.main-navigation {
+		display: block;
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+
+			ul {
+				display: block;
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+
+
+		a {
+			padding: .5em;
+		}
+
+		li li a {
+			padding: 0 .5em;
+		}
+	}
+
+	.site-logo {
+		margin-bottom: 1.5em;
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.menu-wrapper{
+		background-color: transparent;
+		height: auto;
+		opacity: 1;
+		overflow: hidden;
+		position: static;
+		visibility: visible;
+		width: auto;
+	}
+}

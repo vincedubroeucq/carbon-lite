@@ -1,0 +1,27 @@
+table {
+	margin: 1.5em 0;
+	width: 100%;
+}
+
+th {
+    background-color: $color__text-main;
+    border: 1px solid $color__text-input;
+    color: $color__background-body;
+	padding: 0.5em;
+}
+
+td {
+    border: 1px solid $color__text-input;
+	padding: 0.5em;
+}
+
+tr:nth-of-type( 2n+1 ){
+	background-color: $color__background-pre;
+}
+
+tfoot td {
+	background-color: $color__text-main;
+    border: 1px solid $color__text-input;
+    color: $color__background-body;
+	padding: 0.5em;
+}

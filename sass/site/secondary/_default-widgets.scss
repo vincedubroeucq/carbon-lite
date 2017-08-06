@@ -1,0 +1,27 @@
+.widget_calendar {
+
+    tr:nth-of-type(2n+1),
+    a {
+        color: $color__text-main;
+    }
+    
+    a:hover,
+    a:focus,
+    tfoot a,
+    tfoot a:visited {
+        color: $color__background-body;
+    }
+
+    tfoot a:hover,
+    tfoot a:focus {
+        background-color: $color__background-body;
+        color: $color__text-main;
+    }
+    
+}
+
+.widget_rss {
+    li {
+        margin-bottom: 1.5em;
+    }
+}

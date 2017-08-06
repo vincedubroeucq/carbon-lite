@@ -1,0 +1,41 @@
+a {
+	border-radius: 3px;
+	color: $color__link;
+	transition: all .25s ease-in-out;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $color__text-main;
+		color: $color__background-body;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+	
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+}
+
+// Styles for external links.
+[href^="http"]:not([href*="example.com"])::after {
+	// content: '<svg class="small-icon icon-external-link"><title>External Link</title><use xlink:href="#icon-external-link" /></svg> ';
+	// content: url(icons/svg/external-link.svg);
+	// content: '';
+	// display: inline-block; 
+	// width: 1em; 
+	// height: 1em; 
+    // background-image: url(icons/svg/external-link.svg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+}

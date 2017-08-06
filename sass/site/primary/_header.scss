@@ -1,0 +1,98 @@
+.site-header {
+    background-color: $color__text-main;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    color: $color__background-body;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto 2em;
+
+    h1 {
+        animation: title-fade-in .5s ease-in-out;
+        letter-spacing: -0.075em;
+        line-height: 1;
+        margin: 0 0 -0.13em -0.05em;
+    }
+
+    @media screen and (min-width: $breakpoint_desktop){
+		margin-bottom: 3em;
+	} 
+
+}
+
+// Default to standard header size
+.header-info {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40vw;
+    min-height: 0;
+    min-width: 0;
+    max-height: 20em;
+    max-width: 100%;
+
+    & > * {
+        max-width: 100%;
+    }
+}
+
+.small-header .header-info {
+    max-height: 10em;
+}
+
+.header-title a {    
+    color: $color__background-body;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: inherit;
+        font-size: 1.1em;
+    }
+}
+
+.header-meta,
+.header-description {
+    animation: title-fade-in .5s .5s ease-out forwards;
+    font-weight: bold;
+    margin-bottom: 0;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.header-meta a {
+    color: $color__background-body;
+
+    &:hover,
+    &:focus {
+        background-color: $color__background-body;
+		color: $color__text-main;
+		text-decoration: none;
+    }
+}
+
+
+@keyframes title-fade-in {
+    0%   { 
+        opacity: 0;
+        transform: translateX(2em);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes subtitle-fade-in {
+    0%, 50% { 
+        opacity: 0;
+        transform: translateX(2em);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

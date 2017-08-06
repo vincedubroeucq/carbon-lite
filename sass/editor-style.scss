@@ -1,0 +1,97 @@
+/*
+Theme Name: Carbon Lite
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Body
+# Typography
+# Elements
+# Media
+# RTL
+--------------------------------------------------------------*/
+@import "variables-mixins/variables";
+@import "variables-mixins/mixins";
+
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+
+body {
+	background-color: $color__background-body;
+	color: $color__text-main;
+	max-width: 58em;
+}
+
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-weight: 400;
+	line-height: $font__line-height-body;
+	@include bodyscale( $bodyscale__standard );
+
+	@media screen and (min-width: $breakpoint_laptop) {
+		font-weight: 300;
+	}
+}
+
+@import "typography/headings";
+
+@import "typography/copy"; 
+ 
+
+
+/*--------------------------------------------------------------
+# Element
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	width: inherit;  /* Make images fill their parent's space. Solves IE8. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "modules/media";
+
+
+
+/*--------------------------------------------------------------
+# RTL
+--------------------------------------------------------------*/
+.rtl th {
+	text-align: right;
+}
+
+.rtl ol {
+	counter-reset: item;
+}
+
+.rtl ol li:before {
+	left: auto;
+	right: -1.5em;
+}
+
+.rtl li > ul,
+.rtl li > ol {
+	margin-left: 0;
+	margin-right: 1.5em;
+}
+
+.rtl .mejs-offscreen {
+	right: -10000px;
+}

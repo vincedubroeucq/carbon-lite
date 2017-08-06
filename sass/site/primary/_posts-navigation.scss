@@ -1,0 +1,43 @@
+.posts-navigation,
+.post-navigation {
+    background-color: $color__background-body;
+    @include box-shadow();
+    margin: 0 auto 2em;
+    padding: 2em;
+
+    @media screen and (min-width: $breakpoint_desktop){
+		margin-bottom: 3em;
+		padding: 3em;
+	}
+}
+
+.nav-links{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-next {
+    margin-left: auto;
+}
+
+.previous-posts-link,
+.previous-post-link,
+.next-posts-link,
+.next-post-link {
+    align-items: center;
+    display: inline-flex;
+    margin: .5em 0;
+    padding: .5em 1em;
+}
+
+.next-posts-link span:last-child,
+.previous-post-link span:last-child {
+    margin-right: .5em;
+}
+
+.previous-posts-link span:first-child,
+.next-post-link span:first-child {
+    margin-left: .5em;
+}

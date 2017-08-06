@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+## Widget area styles and basic widget styles
+--------------------------------------------------------------*/
+.widget-area {
+	flex: 1 1 0px;
+	margin: 0 auto;
+	min-width: 0px;
+	max-width: 49em;
+}
+
+.medium-content-area .widget-area {
+	max-width: 52em;
+}
+
+.large-content-area .widget-area {
+	max-width: 58em;
+}
+
+@media screen and (min-width: $breakpoint_laptop){
+    .sidebar-right .widget-area {
+        margin-left: 3em;
+    }
+
+    .sidebar-left .widget-area {
+        margin-right: 3em;
+    }
+}
+
+.no-sidebar .widget-area {
+	display: none;
+}
+
+.widget {
+	background-color: $color__background-body;
+	@include box-shadow();
+	margin-bottom: 3em;
+	padding: 2em;
+
+	@media screen and (min-width: $breakpoint_desktop){
+		padding: 3em;
+	}
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+.error-404 .widget {
+    padding: 0;
+    box-shadow: none;
+}
+
+.widget-title {
+	font-weight: bold;
+	font-family: $font__main;
+	margin-top: 0;
+}
+
+.menu-widget {
+	background-color: transparent;
+	box-shadow: none;
+	padding: 0;    
+}
+
+.footer-widget-area {
+	border-bottom: 1px solid lighten( $color__text-main, 10% );	
+}
+
+.footer-widgets {
+	margin: 0 auto;
+	max-width: $breakpoint_desktop;
+
+	@media screen and (min-width: $breakpoint_laptop){
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.footer-widget {
+	background-color: transparent;
+	box-shadow: none;
+	margin: 0 auto;
+	min-width: 0px;
+	max-width: 49em;
+
+	@media screen and (min-width: $breakpoint_laptop){
+		flex: 1 1 18em;
+	}
+}
+
+.medium-content-area .footer-widget {
+	max-width: 52em;
+}
+
+.large-content-area .footer-widget {
+	max-width: 58em;
+}
+
+
+/*--------------------------------------------------------------
+## WordPress default widgets styles
+--------------------------------------------------------------*/
+@import "default-widgets";
