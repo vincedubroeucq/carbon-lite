@@ -34,6 +34,7 @@
 	background-color: $color__background-body;
 	@include box-shadow();
 	margin-bottom: 3em;
+	word-wrap: break-word;
 	padding: 2em;
 
 	@media screen and (min-width: $breakpoint_desktop){

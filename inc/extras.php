@@ -72,6 +72,7 @@ function carbon_lite_pingback_header() {
 add_filter( 'get_search_form', 'carbon_lite_search_form' );
 /**
  * Filter the search form HTML to get our custom search form
+ *
  * @param    string   $form   Original HTML5 form markup
  * @return   string   $form   Modified search form markup
  */
@@ -92,6 +93,7 @@ add_action( 'walker_nav_menu_start_el', 'carbon_lite_social_icons_attributes', 1
 /**
  * Filter the output of the menu items to add the markup needed  
  * to display a social icon in the social menu.
+ *
  * @param    string         $item_output   Actual <a> tag that's being printed out
  * @param    Post Object    $item          Menu item Post Object
  * @param    int            $depth         Menu depth

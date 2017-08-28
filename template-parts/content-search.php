@@ -25,6 +25,6 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

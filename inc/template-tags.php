@@ -216,6 +216,7 @@ function carbon_lite_entry_footer() {
 endif;
 
 
+
 if ( ! function_exists( 'carbon_lite_footer_credits' ) ) :
 /**
  * Prints the custom text in the footer, or the standard theme credits if left blank.

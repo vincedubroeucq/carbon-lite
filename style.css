@@ -3,7 +3,7 @@ Theme Name: Carbon Lite
 Author: vincentdubroeucq
 Author URI: http://vincentdubroeucq.com
 Description: A bold theme for bold bloggers. Carbon Lite features a simple layout supported by fat typography.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: carbon-lite
@@ -1311,10 +1311,21 @@ object {
 }
 
 a.custom-logo-link {
-  line-height: 0;
   border: none;
-  padding: 0;
+  display: inline-block;
+  line-height: 0;
   margin: 0;
+  padding: 0;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+a.custom-logo-link:hover, a.custom-logo-link:focus {
+  background-color: transparent;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 a.custom-logo-link img {
@@ -1452,50 +1463,6 @@ a.custom-logo-link img {
 
 .large-icons .search-form input {
   width: calc(100% + 3em);
-}
-
-.no-js .main-navigation {
-  display: block;
-}
-
-.no-js .main-navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.no-js .main-navigation ul ul {
-  display: block;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.no-js .main-navigation a {
-  padding: .5em;
-}
-
-.no-js .main-navigation li li a {
-  padding: 0 .5em;
-}
-
-.no-js .site-logo {
-  margin-bottom: 1.5em;
-}
-
-.no-js .menu-toggle {
-  display: none;
-}
-
-.no-js .menu-wrapper {
-  background-color: transparent;
-  height: auto;
-  opacity: 1;
-  overflow: hidden;
-  position: static;
-  visibility: visible;
-  width: auto;
 }
 
 /*--------------------------------------------------------------
@@ -2092,6 +2059,7 @@ a.custom-logo-link img {
   -webkit-box-shadow: 3px 3px 3px #aaaaaa;
   box-shadow: 3px 3px 3px #aaaaaa;
   margin-bottom: 3em;
+  word-wrap: break-word;
   padding: 2em;
   /* Make sure select elements fit in widgets. */
 }

@@ -61,10 +61,18 @@
 
 // Logo styles
 a.custom-logo-link {
-	line-height: 0;
 	border: none;
-	padding: 0;
+	display: inline-block;
+	line-height: 0;
 	margin: 0;
+	padding: 0;
+	transition: all .25s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: transparent;
+		transform: scale(1.2);
+	}
 
 	img {
 		max-height: 4em;
@@ -185,50 +193,4 @@ a.custom-logo-link {
 
 .large-icons .search-form input{
 	width: calc(100% + 3em);
-}
-
-// Navigation styles when there's no JS.
-.no-js {
-	
-	.main-navigation {
-		display: block;
-
-		ul {
-			display: flex;
-			flex-wrap: wrap;
-
-			ul {
-				display: block;
-				margin-left: 0;
-				padding-left: 0;
-			}
-		}
-
-
-		a {
-			padding: .5em;
-		}
-
-		li li a {
-			padding: 0 .5em;
-		}
-	}
-
-	.site-logo {
-		margin-bottom: 1.5em;
-	}
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.menu-wrapper{
-		background-color: transparent;
-		height: auto;
-		opacity: 1;
-		overflow: hidden;
-		position: static;
-		visibility: visible;
-		width: auto;
-	}
 }

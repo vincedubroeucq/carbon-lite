@@ -62,7 +62,7 @@
 
 				<?php get_sidebar( 'menu' ); ?>
 				
-			</div>
+			</div><!-- .menu-wrapper -->
 		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
