@@ -34,7 +34,7 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			
-			<?php the_custom_logo(); ?>
+			<?php carbon_lite_the_custom_logo(); ?>
 			
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<span data-icon="ei-navicon"></span>

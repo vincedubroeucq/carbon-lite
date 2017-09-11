@@ -26,6 +26,12 @@
     }
 }
 
+@media print {
+	.widget-area {
+		display: none;
+	}
+}
+
 .no-sidebar .widget-area {
 	display: none;
 }

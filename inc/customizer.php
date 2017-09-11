@@ -15,7 +15,31 @@ function carbon_lite_customize_register( $wp_customize ) {
 	// Set basic Site Identity options to 'postMessage'
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';	
+	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+
+
+	// Add 'Show home link' option
+	$wp_customize->add_setting( 'carbon_lite_display_home_link', array(
+		'default'           => 1,
+		'sanitize_callback' => 'carbon_lite_sanitize_checkbox',
+	) );
+	$wp_customize->add_control( 'carbon_lite_display_home_link', array(
+		'label'       => __( 'Display home link', 'carbon-lite' ),
+		'priority'    => 9,
+		'type'        => 'checkbox',
+		'section'     => 'title_tagline',
+	) );
+
+	/*
+	 * Add a theme options panel to house all our sections.
+	 */
+	 $wp_customize->add_panel( 'theme_options', array(
+		'title' => __( 'Theme options', 'carbon-lite' ),
+		'description' => __( 'Typography, layout and other options.', 'carbon-lite' ),
+		'priority' => 160,
+	  ) );
+
 
 	/*
 	 * Add Color Scheme options.
@@ -40,6 +64,7 @@ function carbon_lite_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'typography', array(
 		'title'       => __( 'Typography', 'carbon-lite' ),
 		'description' => __( 'Choose your text and icon preferences here.', 'carbon-lite' ),
+		'panel'       => 'theme_options',
 		'priority'    => 50,
 	) );
 
@@ -93,6 +118,7 @@ function carbon_lite_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'layout', array(
 		'title'       => __( 'Display and layout', 'carbon-lite' ),
 		'description' => __( 'Choose your layout and display preferences here.', 'carbon-lite' ),
+		'panel'       => 'theme_options',
 		'priority'    => 90,
 	) );
 

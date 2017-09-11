@@ -35,20 +35,23 @@
 
 .comments-title {
 	margin-top: .1em;
+	word-wrap: break-word;		
 }
 
 .comment-list {
 	list-style: none;
 	padding: 0;
 
-	ul {
+	.children {
 		margin-left: 0;
 		padding-left: 3em;
+		font-size: 1em;
 	}
 }
 
 .comment-body {
 	margin-bottom: 1.5em;
+	word-wrap: break-word;	
 
 	@media screen and (min-width: $breakpoint_tablet){
 		display: flex;
@@ -112,6 +115,10 @@
 	label {
 		display: block;
 		margin-bottom: .5em;
+	}
+
+	@media print {
+		display: none;
 	}
 }
 

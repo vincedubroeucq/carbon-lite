@@ -21,7 +21,7 @@ function carbon_lite_header_title(){
 	if ( is_front_page() ): ?>
 
 		<div class="header-info">
-			<h1 class="header-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
 			<?php
 				$description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
@@ -63,6 +63,31 @@ function carbon_lite_header_title(){
 		</div><!-- .site-branding -->
 
 	<?php endif;
+}
+endif;
+
+
+
+if (! function_exists( 'carbon_lite_the_custom_logo' ) ):
+/**
+ * Echoes the custom logo or a home link if the option is enabled in the customizer.
+ */
+function carbon_lite_the_custom_logo(){
+	
+	if( has_custom_logo() ){
+		the_custom_logo();
+	} else {
+		if( get_theme_mod( 'carbon_lite_display_home_link', '1' ) ){
+			$home_url = get_bloginfo( 'url' );
+			?>
+				<a href="<?php echo esc_url( $home_url ); ?>" class="home-link">
+					<div class="icon home-icon"><svg class="icon__cnt" viewBox="0 0 32 32"><path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path></svg></div>
+					<?php esc_html_e( 'Home', 'carbon-lite' ); ?>
+				</a>
+			<?php
+		}
+	}
+	
 }
 endif;
 
@@ -181,8 +206,6 @@ function carbon_lite_the_content( $content_setting = 'full-content' ) {
 	}
 }
 endif;
-
-
 
 
 

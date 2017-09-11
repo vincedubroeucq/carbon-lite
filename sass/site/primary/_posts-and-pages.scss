@@ -84,6 +84,7 @@
 
 .entry-title {
 	margin-top: .1em;
+	word-wrap: break-word;	
 }
 
 .entry-meta {
@@ -92,7 +93,8 @@
 	font-weight: bold;
 	justify-content: space-between;
     margin-bottom: 0;
-    text-transform: uppercase
+	text-transform: uppercase;
+	word-wrap: break-word;		
 }
 
 .thumbnail {
@@ -115,6 +117,7 @@
 
 .entry-content {
 	padding: 2em;
+	word-wrap: break-word;		
 
 	@media screen and (min-width: $breakpoint_desktop){
 		padding: 3em;
@@ -123,11 +126,11 @@
 
 .entry-footer {
 	border-top: 2px solid $color__background-hr;
-	border-bottom: 2px solid $color__background-hr;
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
 	padding: 1em 2em;
+	word-wrap: break-word;		
 
 	@media screen and (min-width: $breakpoint_desktop){
 		padding: 1em 3em;

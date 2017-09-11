@@ -9,27 +9,18 @@
     flex-direction: column-reverse;
     margin: 0 auto 2em;
 
-    h1 {
-        animation: title-fade-in .5s ease-in-out;
-        letter-spacing: -0.075em;
-        line-height: 1;
-        margin: 0 0 -0.13em -0.05em;
-    }
-
     @media screen and (min-width: $breakpoint_desktop){
 		margin-bottom: 3em;
 	} 
-
 }
 
 // Default to standard header size
 .header-info {
     display: flex;
     flex-direction: column-reverse;
-    height: 40vw;
-    min-height: 0;
+    min-height: 25vw;
+    max-height: 40vw;
     min-width: 0;
-    max-height: 20em;
     max-width: 100%;
 
     & > * {
@@ -38,20 +29,15 @@
 }
 
 .small-header .header-info {
-    max-height: 10em;
+    min-height: 15vw;
 }
 
-.header-title a {    
-    color: $color__background-body;
-    text-decoration: none;
-    transition: all .25s ease-in-out;
-
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: inherit;
-        font-size: 1.1em;
-    }
+.header-title {
+    animation: title-fade-in .5s ease-in-out;
+    letter-spacing: -0.075em;
+    line-height: 1;
+    margin: 0 0 -0.13em -0.05em;
+    word-wrap: break-word;
 }
 
 .header-meta,

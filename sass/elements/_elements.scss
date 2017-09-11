@@ -16,7 +16,6 @@ blockquote {
 	border-left: 5px solid $color__text-main;
 	@include box-shadow;
 	font-size: 1.25em;
-    font-style: italic;
     margin: 1.5em;
 	padding: 1em 2em;
 	quotes: "" "";
@@ -27,7 +26,8 @@ blockquote {
 }
 
 q {
-	quotes: "" "";
+	font-style: italic;	
+	quotes: "\00ab" "\00bb";
 }
 
 hr {

@@ -49,7 +49,7 @@ function carbon_lite_body_classes( $classes ) {
 	// If we're using the page builder, just add that class too.
 	$post_id = get_the_ID();
 	if ( is_active_sidebar( 'sidebar-post-' . $post_id ) ) {
-		$classes[] = 'carbon-builder';
+		$classes[] = 'atom-builder';
 	}
 
 	return $classes;
@@ -171,6 +171,22 @@ function carbon_lite_read_more_link() {
 	);
 
     return $link_markup;
+}
+
+
+
+add_filter( 'the_title', 'carbon_lite_the_post_title' );
+/**
+ * Adds a placeholder if a post has no title.
+ *
+ * @param  string  $title  The title of the post object
+ * @return string  $title  A placeholder
+ **/
+function carbon_lite_the_post_title( $title ){
+	if ( empty( $title ) ){
+		$title = esc_html__( 'Untitled', 'carbon-lite' );
+	}
+	return $title;
 }
 
 

@@ -21,43 +21,40 @@
             color: $color__text-main;
         }
     }
+}
 
-	.primary-menu {
-		list-style: none;
-		margin-bottom: 3em;
-		padding: 0;
+.primary-menu {
+	list-style: none;
+	margin-bottom: 3em;
+	padding: 0;
 
-		.sub-menu {
-			list-style: none;
-			padding-left: 2em;
-			font-size: .75em;
+	a {
+		background-color: transparent;
+		border-bottom: 5px solid transparent;
+		border-radius: 0px;
+		color: $color__background-body;
+		display: inline-block;
+		padding: .25em;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: all .25s ease-in-out;
+	}
 
-			@media screen and (min-width: $breakpoint-tablet){
-				font-size: .85em;
-			}
-		}
-
-		a {
-			background-color: transparent;
-			border-bottom: 5px solid transparent;
-			border-radius: 0px;
-			color: $color__background-body;
-			display: inline-block;
-			padding: .25em;
-			text-transform: uppercase;
-			text-decoration: none;
-			transition: all .25s ease-in-out;
-		}
-
-		li > a:hover,
-		li > a:focus {
-			border-bottom-color: $color__background-body;
-			outline: none;
-		}
+	a:hover,
+	a:focus {
+		background-color: transparent;
+		border-bottom-color: $color__background-body;
+		color: $color__background-body;
+		outline: none;
 	}
 }
 
-
+.sub-menu,
+.children {
+	list-style: none;
+	padding-left: 2em;
+	font-size: .9em;
+}
 
 // Logo styles
 a.custom-logo-link {
@@ -71,13 +68,34 @@ a.custom-logo-link {
 	&:hover,
 	&:focus {
 		background-color: transparent;
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 
 	img {
 		max-height: 4em;
 		width: auto;
 	}
+}
+
+a.home-link {
+	align-items: center;
+	border: 2px solid $color__background-body;
+	border-radius: 3px;
+	display: flex;
+	padding: .5em 1em .5em .5em;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		background-color: $color__background-body;
+		color: $color__text-main;
+		outline: none;
+	}
+}
+
+.home-icon {
+	padding: 9px;
 }
 
 // Menu button styles
@@ -87,14 +105,14 @@ a.custom-logo-link {
 	display: flex;
 	margin-left: auto;
 	padding: .5em 1em .5em .5em;
-}
 
-.menu-toggle:focus,
-.menu-toggle:hover {
-    background-color: $color__background-body;
-	box-shadow: none;
-	color: $color__text-main;
-	outline: none;
+	&:focus,
+	&:hover {
+		background-color: $color__background-body;
+		box-shadow: none;
+		color: $color__text-main;
+		outline: none;
+	}
 }
 
 // Menu area sliding panel
