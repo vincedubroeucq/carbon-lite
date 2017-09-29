@@ -1,16 +1,16 @@
-# Copyright (C) 2016 Automattic
+# Copyright (C) 2017 Vincent Dubroeucq
 # This file is distributed under the GNU General Public License v2 or later.
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Carbon Lite 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2017-07-26 11:47+0200\n"
+"Project-Id-Version: Carbon Lite 1.0.4\n"
+"Report-Msgid-Bugs-To: https://vincentdubroeucq.com\n"
+"POT-Creation-Date: 2017-09-29 21:31+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: VINCENT DUBROEUCQ <VINCENT@VINCENTDUBROEUCQ.COM>\n"
 "Language-Team: Vincent Dubroeucq <vincent@vincentdubroeucq.com>\n"
 "X-Generator: Poedit 2.0.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -124,214 +124,230 @@ msgid "Close"
 msgstr ""
 
 #: inc/customizer.php:28
+msgid "Display home link"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Theme options"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Typography, layout and other options."
+msgstr ""
+
+#: inc/customizer.php:52
 msgid "General color scheme"
 msgstr ""
 
-#: inc/customizer.php:29
+#: inc/customizer.php:53
 msgid "Pick your favorite color. This setting affects all colored accents."
 msgstr ""
 
-#: inc/customizer.php:41
+#: inc/customizer.php:65
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer.php:42
+#: inc/customizer.php:66
 msgid "Choose your text and icon preferences here."
 msgstr ""
 
-#: inc/customizer.php:53
+#: inc/customizer.php:78
 msgid "Body text size"
 msgstr ""
 
-#: inc/customizer.php:54
+#: inc/customizer.php:79
 msgid "Choose your prefered body text size. Note that this setting also affects the size of headings and icons."
 msgstr ""
 
-#: inc/customizer.php:67
+#: inc/customizer.php:92
 msgid "Headings size"
 msgstr ""
 
-#: inc/customizer.php:68
+#: inc/customizer.php:93
 msgid "Choose your favorite heading size. Be bold."
 msgstr ""
 
-#: inc/customizer.php:81
+#: inc/customizer.php:106
 msgid "Icons size"
 msgstr ""
 
-#: inc/customizer.php:82
+#: inc/customizer.php:107
 msgid "Choose how you want your icons. Fat or super fat ?"
 msgstr ""
 
-#: inc/customizer.php:94
+#: inc/customizer.php:119
 msgid "Display and layout"
 msgstr ""
 
-#: inc/customizer.php:95
+#: inc/customizer.php:120
 msgid "Choose your layout and display preferences here."
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:131
 msgid "Menu search field"
 msgstr ""
 
-#: inc/customizer.php:106
+#: inc/customizer.php:132
 msgid "Show the search field in menu area ?"
 msgstr ""
 
-#: inc/customizer.php:118
+#: inc/customizer.php:144
 msgid "Header height"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:145
 msgid "Choose the height of your header area."
 msgstr ""
 
-#: inc/customizer.php:132
+#: inc/customizer.php:158
 msgid "Content content area size"
 msgstr ""
 
-#: inc/customizer.php:133
+#: inc/customizer.php:159
 msgid "Choose the width of your posts area."
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:172
 msgid "Sidebar position"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:173
 msgid "Choose where you want to place your blog sidebar."
 msgstr ""
 
-#: inc/customizer.php:159
+#: inc/customizer.php:185
 msgid "Content display option"
 msgstr ""
 
-#: inc/customizer.php:160
+#: inc/customizer.php:186
 msgid "Choose what content you want to display on your blog page."
 msgstr ""
 
-#: inc/customizer.php:174
+#: inc/customizer.php:200
 msgid "Footer text"
 msgstr ""
 
-#: inc/customizer.php:175
+#: inc/customizer.php:201
 msgid "Type in the footer credits you need, or leave blank for the default theme credits.<br />Simple HTML tags, like &lt;strong&gt;,&lt;em&gt;,&lt;a&gt; are allowed."
 msgstr ""
 
-#: inc/customizer.php:226
+#: inc/customizer.php:252
 msgid "Default (soft black)"
 msgstr ""
 
-#: inc/customizer.php:227
+#: inc/customizer.php:253
 msgid "Red"
 msgstr ""
 
-#: inc/customizer.php:228
+#: inc/customizer.php:254
 msgid "Blue"
 msgstr ""
 
-#: inc/customizer.php:229
+#: inc/customizer.php:255
 msgid "Green"
 msgstr ""
 
-#: inc/customizer.php:230
+#: inc/customizer.php:256
 msgid "Orange"
 msgstr ""
 
-#: inc/customizer.php:231
+#: inc/customizer.php:257
 msgid "Yellow"
 msgstr ""
 
-#: inc/customizer.php:238 inc/customizer.php:247 inc/customizer.php:257
+#: inc/customizer.php:264 inc/customizer.php:273 inc/customizer.php:283
 msgid "Small"
 msgstr ""
 
-#: inc/customizer.php:239 inc/customizer.php:248 inc/customizer.php:258
+#: inc/customizer.php:265 inc/customizer.php:274 inc/customizer.php:284
 msgid "Medium"
 msgstr ""
 
-#: inc/customizer.php:240 inc/customizer.php:249 inc/customizer.php:259
+#: inc/customizer.php:266 inc/customizer.php:275 inc/customizer.php:285
 msgid "Large"
 msgstr ""
 
-#: inc/customizer.php:250
+#: inc/customizer.php:276
 msgid "Huge"
 msgstr ""
 
-#: inc/customizer.php:266
+#: inc/customizer.php:292
 msgid "Thin header"
 msgstr ""
 
-#: inc/customizer.php:267
+#: inc/customizer.php:293
 msgid "Standard header"
 msgstr ""
 
-#: inc/customizer.php:274
+#: inc/customizer.php:300
 msgid "Narrower content area"
 msgstr ""
 
-#: inc/customizer.php:275
+#: inc/customizer.php:301
 msgid "Medium content area"
 msgstr ""
 
-#: inc/customizer.php:276
+#: inc/customizer.php:302
 msgid "Wider content area"
 msgstr ""
 
-#: inc/customizer.php:283
+#: inc/customizer.php:309
 msgid "Sidebar on the left"
 msgstr ""
 
-#: inc/customizer.php:284
+#: inc/customizer.php:310
 msgid "Sidebar on the right"
 msgstr ""
 
-#: inc/customizer.php:285
+#: inc/customizer.php:311
 msgid "No sidebar"
 msgstr ""
 
-#: inc/customizer.php:292
+#: inc/customizer.php:318
 msgid "No content (just title and metas)"
 msgstr ""
 
-#: inc/customizer.php:293
+#: inc/customizer.php:319
 msgid "Featured image, title and metas"
 msgstr ""
 
-#: inc/customizer.php:294
+#: inc/customizer.php:320
 msgid "An excerpt of the post"
 msgstr ""
 
-#: inc/customizer.php:295
+#: inc/customizer.php:321
 msgid "The full post"
 msgstr ""
 
-#: inc/extras.php:81
+#: inc/extras.php:82
 msgctxt "Search form label for screen readers"
 msgid "Search for:"
 msgstr ""
 
-#: inc/extras.php:82
+#: inc/extras.php:83
 msgctxt "Search form input"
 msgid "Search &hellip;"
 msgstr ""
 
-#: inc/extras.php:162
+#: inc/extras.php:164
 #, php-format
 msgid "Continue reading %s"
 msgstr ""
 
-#: inc/extras.php:252
+#: inc/extras.php:187
+msgid "Untitled"
+msgstr ""
+
+#: inc/extras.php:270
 #, php-format
 msgid "On %1$s at %2$s"
 msgstr ""
 
-#: inc/extras.php:256
+#: inc/extras.php:274
 msgid "Edit"
 msgstr ""
 
-#: inc/extras.php:260
+#: inc/extras.php:278
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
@@ -344,47 +360,51 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:97
+#: inc/template-tags.php:84
+msgid "Home"
+msgstr ""
+
+#: inc/template-tags.php:121
 #, php-format
 msgctxt "post update date"
 msgid " (Updated on %s)"
 msgstr ""
 
-#: inc/template-tags.php:104
+#: inc/template-tags.php:128
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: inc/template-tags.php:111 inc/template-tags.php:198
+#: inc/template-tags.php:135 inc/template-tags.php:220
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:114
+#: inc/template-tags.php:138
 #, php-format
 msgctxt "Category list"
 msgid " in %s"
 msgstr ""
 
-#: inc/template-tags.php:138
+#: inc/template-tags.php:162
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: inc/template-tags.php:201
+#: inc/template-tags.php:223
 msgid "Tags: "
 msgstr ""
 
-#: inc/template-tags.php:236
+#: inc/template-tags.php:259
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: inc/template-tags.php:236
+#: inc/template-tags.php:259
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:262
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""

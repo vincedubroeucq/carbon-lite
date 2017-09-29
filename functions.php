@@ -47,7 +47,7 @@ function carbon_lite_setup() {
 
 
 	// Register new image sizes
-	add_image_size( 'blog-thumbnail', 1045, 400, true );
+	add_image_size( 'carbon-lite-blog-thumbnail', 1045, 400, true );
 
 
 	// This theme uses wp_nav_menu() in three locations.
@@ -63,9 +63,7 @@ function carbon_lite_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form',
 		'comment-form',
-		'comment-list',
 		'gallery',
 		'caption',
 	) );
@@ -227,28 +225,28 @@ function carbon_lite_scripts() {
 	}
 	
 	// Enqueue basic fonts and styles.
-	wp_enqueue_style( 'carbon-fonts', carbon_lite_fonts_url(), array(), null );
-	wp_enqueue_style( 'carbon-styles', get_theme_file_uri( 'style' . $suffix . '.css' ) , array(), null );
+	wp_enqueue_style( 'carbon-lite-fonts', carbon_lite_fonts_url(), array(), null );
+	wp_enqueue_style( 'carbon-lite-styles', get_theme_file_uri( 'style' . $suffix . '.css' ) , array(), null );
 
 	// Enqueue the color scheme stylesheet if needed.
 	$color_scheme = get_theme_mod( 'carbon_lite_color_scheme', 'color-scheme-default' );
 	$registered_color_schemes = carbon_lite_get_registered_options( 'carbon_lite_color_scheme' );
 	
 	if ( array_key_exists( $color_scheme, $registered_color_schemes) && 'color-scheme-default' != $color_scheme ){
-		wp_enqueue_style( 'carbon-color-scheme', get_theme_file_uri( 'css/' . $color_scheme . $suffix . '.css' ), array( 'carbon-styles' ), null );
+		wp_enqueue_style( 'carbon-lite-color-scheme', get_theme_file_uri( 'css/' . $color_scheme . $suffix . '.css' ), array( 'carbon-lite-styles' ), null );
 	}
 
 	// Enqueue icons fonts and scripts
-	wp_enqueue_style( 'evil-icons', 'https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css', array(), null );
-	wp_enqueue_script( 'evil-icons-js', 'https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js', array(), 'null', false );
+	wp_enqueue_style( 'evil-icons', get_theme_file_uri( '/css/evil-icons' . $suffix . '.css' ), array(), null );
+	wp_enqueue_script( 'evil-icons-js', get_theme_file_uri( '/js/evil-icons' . $suffix . '.js' ), array(), 'null', false );
 
 	// Enqueue basic scripts needed on every page.
 	if ( defined( 'WP_DEBUG' ) && 1 == constant( 'WP_DEBUG' ) ) {
-		wp_enqueue_script( 'carbon-js-detection', get_theme_file_uri( '/js/detection.js' ), array(), null, false );
-		wp_enqueue_script( 'carbon-navigation', get_theme_file_uri( '/js/navigation.js' ), array(), null, true );
-		wp_enqueue_script( 'carbon-skip-link-focus-fix', get_theme_file_uri( '/js/skip-link-focus-fix.js' ), array(), null, true );
+		wp_enqueue_script( 'carbon-lite-js-detection', get_theme_file_uri( '/js/detection.js' ), array(), null, false );
+		wp_enqueue_script( 'carbon-lite-navigation', get_theme_file_uri( '/js/navigation.js' ), array(), null, true );
+		wp_enqueue_script( 'carbon-lite-skip-link-focus-fix', get_theme_file_uri( '/js/skip-link-focus-fix.js' ), array(), null, true );
 	} else {
-		wp_enqueue_script( 'carbon-scripts', get_theme_file_uri( '/js/main-scripts.min.js' ), array(), null, true );
+		wp_enqueue_script( 'carbon-lite-scripts', get_theme_file_uri( '/js/main-scripts.min.js' ), array(), null, true );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

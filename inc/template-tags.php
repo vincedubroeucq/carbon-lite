@@ -78,9 +78,8 @@ function carbon_lite_the_custom_logo(){
 		the_custom_logo();
 	} else {
 		if( get_theme_mod( 'carbon_lite_display_home_link', '1' ) ){
-			$home_url = get_bloginfo( 'url' );
 			?>
-				<a href="<?php echo esc_url( $home_url ); ?>" class="home-link">
+				<a href="<?php echo esc_url( home_url() ); ?>" class="home-link">
 					<div class="icon home-icon"><svg class="icon__cnt" viewBox="0 0 32 32"><path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path></svg></div>
 					<?php esc_html_e( 'Home', 'carbon-lite' ); ?>
 				</a>
@@ -177,7 +176,7 @@ if ( ! function_exists( 'carbon_lite_thumbnail' ) ) :
 /**
  * Echoes the thumbnail of the post or page, if any.
  */
-function carbon_lite_thumbnail( $size = 'blog-thumbnail' ) {
+function carbon_lite_thumbnail( $size = 'carbon-lite-blog-thumbnail' ) {
 	if ( has_post_thumbnail() ){
 		echo '<picture class="thumbnail">' . get_the_post_thumbnail( null, $size ) . '</picture>';
 	}

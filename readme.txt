@@ -4,8 +4,8 @@ Contributors: vincentdubroeucq
 Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
 Requires at least: 4.7
-Tested up to: 4.8
-Stable tag: 1.0.2
+Tested up to: 4.8.2
+Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,11 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Changelog ==
+= 1.0.4 - September 2017 =
+* Fixed minor issues
+
+= 1.0.3 - September 2017 =
+* Fixed minor css bugs
 
 = 1.0.2 - August 2017 =
 * Fixed minor css bugs
@@ -86,7 +91,8 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Credits ==
-
+* Carbon Lite WordPress Theme, Copyright 2017 Vincent Dubroeucq.
+* Carbon Lite is distributed under the terms of the GNU GPL
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Evil Icons http://evil-icons.io, made by Alexander Madyankin and Roman Shamin, under the MIT Licence.

@@ -36,12 +36,12 @@ function carbon_lite_body_classes( $classes ) {
 	);
 
 	foreach ( $settings as $key => $value) {
-		$classes[] = $value;
+		$classes[] = esc_attr( $value );
 	}
 
 	// Check to see if there's a sidebar and add the corresponding body class.
 	if ( is_active_sidebar( 'sidebar-1' ) && ! is_page() ){
-		$classes[] = get_theme_mod( 'carbon_lite_sidebar_position', 'sidebar-right' );
+		$classes[] = esc_attr( get_theme_mod( 'carbon_lite_sidebar_position', 'sidebar-right' ) );
 	} else {
 		$classes[] = 'no-sidebar';
 	}

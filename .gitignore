@@ -1,5 +1,7 @@
 carbon-lite/
 carbon-lite-archive/
 .sass-cache/
+css/
+js/*.min.js
 node_modules/
 prototype/

@@ -1,6 +1,6 @@
 <?php
 /**
- * Carbon Theme Customizer
+ * Carbon Lite Theme Customizer
  *
  * @package carbon-lite
  */
