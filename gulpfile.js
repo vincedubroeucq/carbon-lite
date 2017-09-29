@@ -137,6 +137,7 @@ gulp.task('clean', function(){
 gulp.task('build', ['minifyMainStylesheet', 'minifyColorSchemes', 'minifyEditorStyles', 'minifyMainScripts', 'minifyCustomizerScript'], function(){
     return gulp.src([
             'css/**',
+            'icons/**',
             'inc/**',
             'js/**',
             'languages/**',
@@ -154,6 +155,7 @@ gulp.task('build', ['minifyMainStylesheet', 'minifyColorSchemes', 'minifyEditorS
 gulp.task('archive', ['build'], function(){
     return gulp.src([
             'css/**',
+            'icons/**',
             'inc/**',
             'js/**',
             'languages/**',

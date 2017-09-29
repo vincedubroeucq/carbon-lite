@@ -237,8 +237,8 @@ function carbon_lite_scripts() {
 	}
 
 	// Enqueue icons fonts and scripts
-	wp_enqueue_style( 'evil-icons', get_theme_file_uri( '/css/evil-icons' . $suffix . '.css' ), array(), null );
-	wp_enqueue_script( 'evil-icons-js', get_theme_file_uri( '/js/evil-icons' . $suffix . '.js' ), array(), 'null', false );
+	wp_enqueue_style( 'evil-icons', get_theme_file_uri( '/icons/evil-icons' . $suffix . '.css' ), array(), null );
+	wp_enqueue_script( 'evil-icons-js', get_theme_file_uri( '/icons/evil-icons' . $suffix . '.js' ), array(), 'null', false );
 
 	// Enqueue basic scripts needed on every page.
 	if ( defined( 'WP_DEBUG' ) && 1 == constant( 'WP_DEBUG' ) ) {
