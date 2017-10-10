@@ -18,8 +18,8 @@ get_header(); ?>
 			get_template_part( 'template-parts/content' );
 
 			the_post_navigation( array(
-				'prev_text' => '<span data-icon="ei-arrow-left"></span><span>%title</span>',
-				'next_text' => '<span>%title</span><span data-icon="ei-arrow-right"></span>',
+				'prev_text' => '<span aria-hidden="true"><span data-icon="ei-arrow-left"></span></span><span>%title</span>',
+				'next_text' => '<span>%title</span><span aria-hidden="true"><span data-icon="ei-arrow-right"></span></span>',
 			) );
 
 			// If comments are open or we have at least one comment, load up the comment template.

@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Carbon Lite 1.0.4\n"
+"Project-Id-Version: Carbon Lite 1.0.5\n"
 "Report-Msgid-Bugs-To: https://vincentubroeucq.com\n"
-"POT-Creation-Date: 2017-09-29 21:34+0200\n"
-"PO-Revision-Date: 2017-09-29 21:34+0200\n"
+"POT-Creation-Date: 2017-10-10 23:13+0200\n"
+"PO-Revision-Date: 2017-10-10 23:15+0200\n"
 "Last-Translator: VINCENT DUBROEUCQ <VINCENT@VINCENTDUBROEUCQ.COM>\n"
 "Language-Team: Vincent Dubroeucq <vincent@vincentdubroeucq.com>\n"
 "Language: fr_FR\n"
@@ -55,15 +55,21 @@ msgstr "Articles précédents"
 msgid "Newer posts"
 msgstr "Articles suivants"
 
-#: comments.php:31
+#: comments.php:33
 #, php-format
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Une réponse à &ldquo;%s&rdquo;"
+
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Une réponse à &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s réponses à &ldquo;%2$s&rdquo;"
 
-#: comments.php:66
+#: comments.php:76
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
@@ -79,41 +85,41 @@ msgstr "Menu des réseaux sociaux principal"
 msgid "Footer Social Menu"
 msgstr "Menu des réseaux sociaux du pied de page"
 
-#: functions.php:129
+#: functions.php:127
 msgid "Blog Sidebar"
 msgstr "Barre latérale du blog"
 
-#: functions.php:131
+#: functions.php:129
 msgid "Add widgets for your blog here."
 msgstr "Ajouter des widgets pour votre blog ici."
 
-#: functions.php:139
+#: functions.php:137
 msgid "Menu Widgets"
 msgstr "Widgets du menu"
 
-#: functions.php:141
+#: functions.php:139
 msgid "Add widgets you want in the menu panel here."
 msgstr "Ajoutez les widgets que vous voulez dans le panneau du menu."
 
-#: functions.php:149
+#: functions.php:147
 msgid "Footer Widgets"
 msgstr "Widgets du pied de page"
 
-#: functions.php:151
+#: functions.php:149
 msgid "Add widgets you want in the footer here."
 msgstr "Ajoutez les widgets que vous voulez en pied de page."
 
-#: functions.php:175
+#: functions.php:173
 msgctxt "Audiowide heading font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:181
+#: functions.php:179
 msgctxt "Exo2 body font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:187
+#: functions.php:185
 msgctxt "Space Mono mono font: on or off"
 msgid "on"
 msgstr "on"
@@ -430,6 +436,18 @@ msgstr "Fièrement propulsé par %s"
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr "Thème: %1$s par %2$s."
+
+#: sidebar-footer.php:15
+msgid "Footer widget area"
+msgstr "Zone de widget du pied de page"
+
+#: sidebar-menu.php:15
+msgid "Menu widget area"
+msgstr "Zone de widgets du menu"
+
+#: sidebar.php:15
+msgid "Main widget area"
+msgstr "Zone de widgets principale"
 
 #: template-parts/content-none.php:15
 msgid "Nothing Found !"

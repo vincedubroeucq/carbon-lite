@@ -5,7 +5,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, acc
 
 Requires at least: 4.7
 Tested up to: 4.8.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,7 @@ There are three widget areas:
  - The menu widget area allows you to add widgets to the slide-in panel, just under the menu.
 
 There are three menu slots
- - The main menu slot features your main menu, obviously.
+ - The main menu slot features your main menu, obviously. You can close the menu by clicking the close button, clicking outside of the menu or pressing the ESC key.
  - The main social menu allows you to add social link icons under your main menu. Just link to your profile on your favorite platforms, and just use the platform name as the link text to get the correct icon to properly display.
  - The footer social menu works in the same way.
 
@@ -74,6 +74,9 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Changelog ==
+= 1.0.4 - October 2017 =
+* Fixed accessibility issues
+
 = 1.0.4 - September 2017 =
 * Fixed minor issues
 

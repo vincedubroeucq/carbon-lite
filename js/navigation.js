@@ -37,8 +37,15 @@
 	closeButton.onclick = toggleMenu;
 	window.onclick = closeMenu;
 	document.onkeyup = closeMenuOnEsc;
+
+	// Close the menu when the last focusable element is blurred
+	const menuWrapper = document.querySelector( '.menu-wrapper' );
+	const focusables = menuWrapper.querySelectorAll( 'a', 'select', 'input', 'button', 'textarea');
+	const lastFocusable = focusables[focusables.length - 1];
+	lastFocusable.onblur = toggleMenu;
 	
-	function toggleMenu() {
+	function toggleMenu(e) {
+		
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
@@ -52,7 +59,7 @@
 
 	function closeMenu(e){
 		var menuOpen      = -1 !== container.className.indexOf( 'toggled' ),
-			buttonClicked = e.target == button || e.target.parentElement == button,
+			buttonClicked = e.target == button || e.target.parentElement == button || e.target.parentElement.parentElement == button,
 			menuWrapper   = document.getElementsByClassName( 'menu-wrapper' )[0],
 			wrapperWidth  = menuWrapper.offsetWidth;
 

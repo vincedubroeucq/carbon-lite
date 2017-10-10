@@ -80,7 +80,7 @@ function carbon_lite_the_custom_logo(){
 		if( get_theme_mod( 'carbon_lite_display_home_link', '1' ) ){
 			?>
 				<a href="<?php echo esc_url( home_url() ); ?>" class="home-link">
-					<div class="icon home-icon"><svg class="icon__cnt" viewBox="0 0 32 32"><path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path></svg></div>
+					<div class="icon home-icon" aria-hidden="true"><svg class="icon__cnt" viewBox="0 0 32 32"><path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path></svg></div>
 					<?php esc_html_e( 'Home', 'carbon-lite' ); ?>
 				</a>
 			<?php
@@ -163,7 +163,7 @@ function carbon_lite_edit_post_link(){
 		the_title( '<span class="screen-reader-text">"', '"</span>', false )
 	);
 
-	$link_text = '<span>' .$link_text . '</span><span data-icon="ei-pencil"></span>';
+	$link_text = '<span>' .$link_text . '</span><span aria-hidden="true"><span data-icon="ei-pencil"></span></span>';
 
 	edit_post_link( $link_text );
 }
@@ -221,7 +221,7 @@ function carbon_lite_entry_footer() {
 		if ( $tags_list ) {
 			$html  = '<span class="tags-links">';
 			$html .= '<span class="screen-reader-text">' . esc_html__( 'Tags: ', 'carbon-lite' ) . '</span>';
-			$html .= '<span data-icon="ei-tag"></span>';
+			$html .= '<span aria-hidden="true"><span data-icon="ei-tag"></span></span>';
 			$html .= $tags_list;
 			$html .= '</span>';
 			echo $html;
@@ -231,7 +231,7 @@ function carbon_lite_entry_footer() {
 	if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
 		comments_popup_link(); 
-		echo '<span data-icon="ei-comment"></span></span>';
+		echo '<span aria-hidden="true"><span data-icon="ei-comment"></span></span></span>';
 	}
 
 }
@@ -250,7 +250,7 @@ function carbon_lite_footer_credits() {
 		?>
 
 			<div class="site-info">
-				<?php echo $footer_text; ?>
+				<?php echo wp_kses_post( $footer_text ); ?>
 			</div><!-- .site-info -->
 
 		<?php else : ?>
@@ -261,7 +261,7 @@ function carbon_lite_footer_credits() {
 				<?php printf( 
 					esc_html__( 'Theme: %1$s by %2$s.', 'carbon-lite' ),
 					wp_get_theme(),
-					'<a href="' . wp_get_theme()->get( 'AuthorURI' ) . '" rel="designer">' . wp_get_theme()->get( 'Author' ) . '</a>' ); 
+					'<a href="' . esc_url( wp_get_theme()->get( 'AuthorURI' ) ) . '" rel="designer">' . esc_html( wp_get_theme()->get( 'Author' ) ) . '</a>' ); 
 				?>
 			</div><!-- .site-info -->
 

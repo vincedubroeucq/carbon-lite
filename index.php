@@ -28,8 +28,8 @@ get_header(); ?>
 			endwhile;
 
 			the_posts_navigation( array(
-				'prev_text' => '<span data-icon="ei-arrow-left"></span><span>' . __( 'Older posts', 'carbon-lite' ) . '</span>',
-				'next_text' => '<span>' . __( 'Newer posts', 'carbon-lite' ) . '</span><span data-icon="ei-arrow-right"></span>',
+				'prev_text' => '<span aria-hidden="true"><span data-icon="ei-arrow-left"></span></span><span>' . __( 'Older posts', 'carbon-lite' ) . '</span>',
+				'next_text' => '<span>' . __( 'Newer posts', 'carbon-lite' ) . '</span><span aria-hidden="true"><span data-icon="ei-arrow-right"></span></span>',
 			) );
 			
 		else :

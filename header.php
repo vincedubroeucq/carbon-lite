@@ -37,7 +37,7 @@
 			<?php carbon_lite_the_custom_logo(); ?>
 			
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<span data-icon="ei-navicon"></span>
+				<span aria-hidden="true"><span data-icon="ei-navicon"></span></span>
 				<?php esc_html_e( 'Menu', 'carbon-lite' ); ?>
 			</button>
 
@@ -45,8 +45,8 @@
 				<header class="menu-header">
                     <h2 class="menu-title"><?php esc_html_e( 'Menu', 'carbon-lite' ); ?></h2>
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                        <span data-icon="ei-close"></span>
-                        <span class="screen-reader-text"><?php esc_html_x( 'Close', 'Menu close button', 'carbon-lite' ); ?></span>
+                        <span aria-hidden="true"><span data-icon="ei-close"></span></span>
+                        <span class="screen-reader-text"><?php echo esc_html_x( 'Close', 'Menu close button', 'carbon-lite' ); ?></span>
                     </button>
                 </header>
 				
@@ -58,7 +58,9 @@
 				
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'primary-menu', 'container' => 'ul' ) ); ?>
 
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_class' => 'social-icons', 'container' => 'ul', 'link_before' => '<span data-icon="">', 'link_after' => '</span>', ) ); ?>
+				<?php if ( has_nav_menu( 'menu-2' ) ){
+					wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_class' => 'social-icons', 'container' => 'ul', 'link_before' => '<span data-icon="">', 'link_after' => '</span>', ) );
+				} ?>
 
 				<?php get_sidebar( 'menu' ); ?>
 				

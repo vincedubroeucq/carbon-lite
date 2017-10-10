@@ -1,6 +1,6 @@
 {
   "name": "carbon-lite",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A bold theme for bold bloggers. Includes the Carbon Builder.",
   "main": "gulpfile.js",
   "scripts": {
