@@ -210,8 +210,17 @@ textarea {
 	}
 }
 
-.search-form .icon {
-    color: $color__text-main;
+.search-form {
+	button {
+		&:hover .icon,
+		&:focus .icon{
+			color: $color__background-body;
+		}
+	}
+
+	.icon {
+		color: $color__text-main;
+	}
 }
 
 .hentry,

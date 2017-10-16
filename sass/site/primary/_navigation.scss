@@ -195,6 +195,17 @@ a.home-link {
 		height: 100%;
 	}
 
+	button {
+		border: none;
+		line-height: 0;
+		padding: 0;
+
+		&:hover .icon,
+		&:focus .icon{
+			color: $color__background-body;
+		}
+	}
+
 	.icon {
 		color: $color__text-main;
 		margin: auto 0;

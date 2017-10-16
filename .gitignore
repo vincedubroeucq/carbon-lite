@@ -3,5 +3,6 @@ carbon-lite-archive/
 .sass-cache/
 css/
 js/*.min.js
+*.map
 node_modules/
 prototype/

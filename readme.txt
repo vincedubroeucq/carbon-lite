@@ -5,7 +5,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, acc
 
 Requires at least: 4.7
 Tested up to: 4.8.2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,9 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Changelog ==
+= 1.0.5 - October 2017 =
+* Fixed accessibility issues
+
 = 1.0.4 - October 2017 =
 * Fixed accessibility issues
 

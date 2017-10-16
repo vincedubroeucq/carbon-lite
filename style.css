@@ -3,7 +3,7 @@ Theme Name: Carbon Lite
 Author: vincentdubroeucq
 Author URI: http://vincentdubroeucq.com
 Description: A bold theme for bold bloggers. Carbon Lite features a simple layout supported by fat typography.
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: carbon-lite
@@ -1457,6 +1457,17 @@ a.home-link:focus, a.home-link:hover {
 
 .search-form input {
   height: 100%;
+}
+
+.search-form button {
+  border: none;
+  line-height: 0;
+  padding: 0;
+}
+
+.search-form button:hover .icon,
+.search-form button:focus .icon {
+  color: #fff;
 }
 
 .search-form .icon {
