@@ -82,7 +82,7 @@ function carbon_lite_search_form( $form ){
                     <span class="screen-reader-text">' . _x( 'Search for:', 'Search form label for screen readers', 'carbon-lite' ) . '</span>
                     <input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search &hellip;', 'Search form input', 'carbon-lite' ) . '" value="' . get_search_query() . '" name="s" />
 				</label>
-				<button type="submit" class="search-submit"><span data-icon="ei-search"></span></button>
+				<button type="submit" class="search-submit"><span data-icon="ei-search"></span><span class="screen-reader-text">' . esc_html_x( 'Search', 'Search submit button', 'carbon-lite' ) . '</span></button>
             </form>';
 	return $form;
 }
