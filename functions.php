@@ -92,7 +92,7 @@ function carbon_lite_setup() {
 	 * specifically font, colors, and column width.
  	 */
 	$suffix = '.min';
-	if ( defined( 'WP_DEBUG' ) && 1 == constant( 'WP_DEBUG' ) ) {
+	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
 		$suffix = '';
 	}
 	add_editor_style( array ( 'editor-style' . $suffix . '.css', carbon_lite_fonts_url() ) );
@@ -208,7 +208,7 @@ function carbon_lite_fonts_url() {
 		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 	}
 
-	return esc_url( $fonts_url );
+	return $fonts_url;
 }
 
 
@@ -220,12 +220,12 @@ function carbon_lite_scripts() {
 
 	// Check if the debug mode is on. If not, enqueue the minified stylesheets.
 	$suffix = '.min';
-	if ( defined( 'WP_DEBUG' ) && 1 == constant( 'WP_DEBUG' ) ) {
+	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
 		$suffix = '';
 	}
 	
 	// Enqueue basic fonts and styles.
-	wp_enqueue_style( 'carbon-lite-fonts', carbon_lite_fonts_url(), array(), null );
+	wp_enqueue_style( 'carbon-lite-fonts', esc_url( carbon_lite_fonts_url() ), array(), null );
 	wp_enqueue_style( 'carbon-lite-styles', get_theme_file_uri( 'style' . $suffix . '.css' ) , array(), null );
 
 	// Enqueue the color scheme stylesheet if needed.
@@ -241,7 +241,7 @@ function carbon_lite_scripts() {
 	wp_enqueue_script( 'evil-icons-js', get_theme_file_uri( '/icons/evil-icons' . $suffix . '.js' ), array(), 'null', false );
 
 	// Enqueue basic scripts needed on every page.
-	if ( defined( 'WP_DEBUG' ) && 1 == constant( 'WP_DEBUG' ) ) {
+	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
 		wp_enqueue_script( 'carbon-lite-js-detection', get_theme_file_uri( '/js/detection.js' ), array(), null, false );
 		wp_enqueue_script( 'carbon-lite-navigation', get_theme_file_uri( '/js/navigation.js' ), array(), null, true );
 		wp_enqueue_script( 'carbon-lite-skip-link-focus-fix', get_theme_file_uri( '/js/skip-link-focus-fix.js' ), array(), null, true );
@@ -254,7 +254,6 @@ function carbon_lite_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'carbon_lite_scripts' );
-
 
 
 /**

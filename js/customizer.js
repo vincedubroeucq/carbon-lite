@@ -11,7 +11,7 @@
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
-			$( '.header-title a' ).text( to );
+			$( '.header-title' ).text( to );
 		} );
 	} );
 	wp.customize( 'blogdescription', function( value ) {
@@ -24,16 +24,16 @@
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {
 			if ( 'blank' === to ) {
-				$( '.header-title a, .header-description' ).css( {
+				$( '.header-title, .header-description' ).css( {
 					'clip': 'rect(1px, 1px, 1px, 1px)',
 					'position': 'absolute'
 				} );
 			} else {
-				$( '.header-title a, .header-description' ).css( {
+				$( '.header-title, .header-description' ).css( {
 					'clip': 'auto',
 					'position': 'relative'
 				} );
-				$( '.header-title a, .header-description' ).css( {
+				$( '.header-title, .header-description' ).css( {
 					'color': to
 				} );
 			}

@@ -4,8 +4,8 @@ Contributors: vincentdubroeucq
 Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
 Requires at least: 4.7
-Tested up to: 4.8.2
-Stable tag: 1.0.7
+Tested up to: 4.8.3
+Stable tag: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,10 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Changelog ==
+= 1.0.8 - November 2017 =
+* Fixed header image not showing with default header text color.
+* Fixed customizer issues with header text color
+
 = 1.0.7 - October 2017 =
 * Fixed search form accessibility issues
 
