@@ -1,13 +1,13 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying JetPack project tag archive pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package carbon-lite
  */
-get_header(); 
-?>
+
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -19,7 +19,7 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'archive' );
+				get_template_part( 'template-parts/content', 'jetpack-projects' );
 
 			endwhile;
 
@@ -38,5 +38,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

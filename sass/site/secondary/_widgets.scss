@@ -76,7 +76,7 @@
 
 .footer-widgets {
 	margin: 0 auto;
-	max-width: $breakpoint_desktop;
+	max-width: $site-max-width;
 
 	@media screen and (min-width: $breakpoint_laptop){
 		display: flex;

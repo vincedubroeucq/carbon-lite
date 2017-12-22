@@ -1,0 +1,65 @@
+.post-type-archive-jetpack-portfolio .site-content,
+.post-type-archive-jetpack-portfolio .content-area,
+.tax-jetpack-portfolio-type .site-content,
+.tax-jetpack-portfolio-type .content-area,
+.tax-jetpack-portfolio-tag .site-content,
+.tax-jetpack-portfolio-tag .content-area {
+    max-width: 1600px;
+}
+
+.jetpack-testimonial {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+    flex-wrap: wrap;
+    
+    .thumbnail {
+        flex-shrink: 0;
+		min-width: 0px;
+        
+        img {
+			margin: 0;
+		}
+    }
+
+    cite {
+        display: block;
+        text-align: right;
+    }
+
+}
+
+.jetpack-testimonial-content {
+    flex: 1 1 300px;
+    min-width: 0px;
+    padding: 0 2em;
+}
+
+
+@media screen and (min-width: 1280px){
+    .tax-jetpack-portfolio-type .jetpack-portfolio,
+    .tax-jetpack-portfolio-tag .jetpack-portfolio,
+    .post-type-archive-jetpack-portfolio .jetpack-portfolio {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .jetpack-portfolio:nth-of-type(2n) .thumbnail {
+        order: 2;
+    }
+
+    .jetpack-portfolio .thumbnail {
+        flex: 1 20em;
+        padding: 0 2em;
+    }
+
+    .single-jetpack-portfolio .thumbnail {
+        padding: 0;
+    }
+
+    .jetpack-portfolio-entry {
+        flex: 1 20em;
+    }
+}

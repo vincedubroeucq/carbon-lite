@@ -3,7 +3,7 @@ Theme Name: Carbon Lite
 Author: vincentdubroeucq
 Author URI: http://vincentdubroeucq.com
 Description: A bold theme for bold bloggers. Carbon Lite features a simple layout supported by fat typography.
-Version: 1.0.8
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: carbon-lite
@@ -1249,7 +1249,7 @@ object {
 
 @media screen and (min-width: 1280px) {
   .main-navigation {
-    max-width: 1280px;
+    max-width: 1600px;
     padding: 2em 0;
   }
 }
@@ -1650,6 +1650,7 @@ a.home-link:focus, a.home-link:hover {
   display: inline-flex;
   line-height: 1;
   padding-left: .5em;
+  text-transform: uppercase;
 }
 
 .entry-content {
@@ -2018,7 +2019,7 @@ a.home-link:focus, a.home-link:hover {
 
 @media screen and (min-width: 1280px) {
   .footer-wrapper {
-    max-width: 1280px;
+    max-width: 1600px;
     padding: 2em 0;
   }
 }
@@ -2139,7 +2140,7 @@ a.home-link:focus, a.home-link:hover {
 
 .footer-widgets {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1600px;
 }
 
 @media screen and (min-width: 60em) {
@@ -2200,4 +2201,93 @@ a.home-link:focus, a.home-link:hover {
 
 .widget_rss li {
   margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Jetpack Portfolio and Testimonial Custom Content Type support
+--------------------------------------------------------------*/
+.post-type-archive-jetpack-portfolio .site-content,
+.post-type-archive-jetpack-portfolio .content-area,
+.tax-jetpack-portfolio-type .site-content,
+.tax-jetpack-portfolio-type .content-area,
+.tax-jetpack-portfolio-tag .site-content,
+.tax-jetpack-portfolio-tag .content-area {
+  max-width: 1600px;
+}
+
+.jetpack-testimonial {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.jetpack-testimonial .thumbnail {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  min-width: 0px;
+}
+
+.jetpack-testimonial .thumbnail img {
+  margin: 0;
+}
+
+.jetpack-testimonial cite {
+  display: block;
+  text-align: right;
+}
+
+.jetpack-testimonial-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 300px;
+  flex: 1 1 300px;
+  min-width: 0px;
+  padding: 0 2em;
+}
+
+@media screen and (min-width: 1280px) {
+  .tax-jetpack-portfolio-type .jetpack-portfolio,
+  .tax-jetpack-portfolio-tag .jetpack-portfolio,
+  .post-type-archive-jetpack-portfolio .jetpack-portfolio {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .jetpack-portfolio:nth-of-type(2n) .thumbnail {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .jetpack-portfolio .thumbnail {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 20em;
+    flex: 1 20em;
+    padding: 0 2em;
+  }
+  .single-jetpack-portfolio .thumbnail {
+    padding: 0;
+  }
+  .jetpack-portfolio-entry {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 20em;
+    flex: 1 20em;
+  }
 }

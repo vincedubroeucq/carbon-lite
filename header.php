@@ -56,7 +56,7 @@
 					}
 				?>
 				
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'primary-menu', 'container' => 'ul' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1','menu_id' => 'primary-menu', 'menu_class' => 'primary-menu', 'container' => 'ul' ) ); ?>
 
 				<?php if ( has_nav_menu( 'menu-2' ) ){
 					wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_class' => 'social-icons', 'container' => 'ul', 'link_before' => '<span data-icon="">', 'link_after' => '</span>', ) );

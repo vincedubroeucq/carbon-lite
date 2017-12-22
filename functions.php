@@ -84,7 +84,15 @@ function carbon_lite_setup() {
 	add_theme_support( 'custom-logo', apply_filters( 'carbon_lite_custom_logo_args', array(
         'height'      => 75,
         'flex-width'  => true,
-    ) ) );
+	) ) );
+	
+
+	// Add theme support for Jetpack Portfolio and Jetpack Testimonials Custom Content Type.
+	add_theme_support( 'jetpack-portfolio' );
+	add_theme_support( 'jetpack-testimonials' );
+
+	// Add new image size for Jetpack portfolio item featured images.
+	add_image_size( 'carbon-lite-jetpack-portfolio-thumbnail', 1280, 720, true );
 
 
 	/*

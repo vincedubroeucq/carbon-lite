@@ -5,7 +5,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, acc
 
 Requires at least: 4.7
 Tested up to: 4.8.3
-Stable tag: 1.0.8
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Carbon Lite supports all standard customizer options, like 'Site Identity', 'Hea
  - The 'Display and Layout' section allows you to control the size of your content area, the position of your blog sidebar and what content you want to display on your blog listing page.
 The Customizer is a wonderful tool, and this theme will in the future make much more extensive use of it.
 
+JetPack Compatibility
+This theme supports JetPack's Portfolio and Testimonial Custom Content Types.
+Just activate them in your JetPack settings, and everything should diplay fine on the front end. 
+
 
 == Installation ==
 
@@ -74,6 +78,13 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Changelog ==
+= 1.1.0 - December 2017 =
+* Added support for JetPack's Portfolio and Testimonial Custom Content Types
+
+= 1.0.9 - November 2017 =
+* Fixed minor accessibility issues
+* Augmented header and footer max width
+
 = 1.0.8 - November 2017 =
 * Fixed header image not showing with default header text color.
 * Fixed customizer issues with header text color

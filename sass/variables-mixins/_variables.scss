@@ -34,6 +34,7 @@ $breakpoint_mobile: 34em;   // 480px at 14px font size.
 $breakpoint_tablet: 40em;   // 640px at 16px font size.
 $breakpoint_laptop: 60em;   // 960px at 16px font size.
 $breakpoint_desktop: 1280px;   // 1280px at 18px font size.
+$site-max-width : 1600px;
 
 $bodyscale__small: ( $breakpoint_mobile: 13, $breakpoint_tablet: 14, $breakpoint_laptop: 15, $breakpoint_desktop: 16 );
 $bodyscale__standard: ( $breakpoint_mobile: 14, $breakpoint_tablet: 15, $breakpoint_laptop: 16, $breakpoint_desktop: 18 );

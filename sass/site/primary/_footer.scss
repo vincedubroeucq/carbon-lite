@@ -31,7 +31,7 @@
     margin: 0 auto;
 
     @media screen and (min-width: $breakpoint_desktop){
-        max-width: $breakpoint_desktop;
+        max-width: $site-max-width;
         padding: 2em 0;
 	}
 

@@ -17,52 +17,53 @@ if ( ! function_exists( 'carbon_lite_header_title' ) ) :
  * - for a single post : display title with metas.
  */
 function carbon_lite_header_title(){
+	?>
+	<div class="header-info">
 
-	if ( is_front_page() ): ?>
+		<?php if ( is_front_page() ): ?>
 
-		<div class="header-info">
 			<h1 class="header-title"><?php bloginfo( 'name' ); ?></h1>
 			<?php
 				$description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
-					<p class="header-description"><?php echo $description; ?></p>
+					<p class="header-description"><?php echo esc_html( $description ); ?></p>
 				<?php endif; 
 			?>
-		</div><!-- .site-branding -->
-
-	<?php elseif (  is_home() || is_page() ) : ?>
-		
-		<div class="header-info">
+			
+		<?php elseif (  is_home() || is_page() ) : ?>
+			
 			<h1 class="header-title"><?php single_post_title(); ?></h1>
-		</div><!-- .site-branding -->
-		
-	<?php elseif ( is_single() ) : ?>
-		
-		<div class="header-info">
+
+		<?php elseif ( is_singular( 'jetpack-portfolio' ) ) : ?>
+				
+			<h1 class="header-title"><?php the_title(); ?></h1>
+			<p class="header-meta"><?php carbon_lite_jetpack_portfolio_meta(); ?></p>
+			
+		<?php elseif ( is_single() ) : ?>
+			
 			<h1 class="header-title"><?php the_title(); ?></h1>
 			<p class="header-meta"><?php carbon_lite_entry_meta(); ?></p>
-		</div><!-- .site-branding -->
 
-	<?php elseif ( is_404() ) : ?>
+		<?php elseif ( is_404() ) : ?>
 
-		<div class="header-info">
 			<h1 class="header-title"><?php esc_html_e( 'Oops! That\'s a 404 !', 'carbon-lite' ); ?></h1>
-		</div><!-- .site-branding -->
 
-	<?php elseif ( is_archive() ) : ?>
+		<?php elseif ( is_archive() ) : ?>
 
-		<div class="header-info">
 			<h1 class="header-title"><?php the_archive_title();?></h1>
-			<p class="header-meta"><?php the_archive_description(); ?></p>
-		</div><!-- .site-branding -->
 
-	<?php elseif ( is_search() ) : ?>
+		<?php elseif ( is_search() ) : ?>
 
-		<div class="header-info">
 			<h1 class="header-title"><?php printf( esc_html__( 'Search Results for: %s', 'carbon-lite' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-		</div><!-- .site-branding -->
 
-	<?php endif;
+		<?php else : ?>
+			
+			<h1 class="header-title"><?php the_title(); ?></h1>
+
+		<?php endif; ?>
+
+	</div><!-- .header-info -->
+	<?php 
 }
 endif;
 
@@ -108,6 +109,12 @@ function carbon_lite_entry_meta() {
 	// Get the month archive link.
 	$month_archive_link = get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) );
 
+	// Build the post date meta display.
+	$posted_on = sprintf(
+		esc_html_x( 'Posted on %s', 'post date', 'carbon-lite' ),
+		'<a href="' . esc_url( $month_archive_link ) . '" rel="bookmark">' . $time_string . '</a>'
+	);
+
 	// If the post has been updated, create another time string.
 	$updated_on = '';
 	
@@ -117,17 +124,15 @@ function carbon_lite_entry_meta() {
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
+
+		// Get the month archive link of the updated post.
+		$month_archive_link = get_month_link( get_the_modified_time( 'Y' ), get_the_modified_time( 'm' ) );
+
 		$updated_on = sprintf(
 			esc_html_x( ' (Updated on %s)', 'post update date', 'carbon-lite' ),
 			'<a href="' . esc_url( $month_archive_link ) . '" rel="bookmark">' . $update_time . '</a>'
 		);
 	}
-
-	// Build the post date meta display.
-	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'carbon-lite' ),
-		'<a href="' . esc_url( $month_archive_link ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
 
 	// Build the category meta display.
 	$categories = '';
@@ -145,6 +150,24 @@ function carbon_lite_entry_meta() {
 		$updated_on,
 		$categories
 	);
+
+}
+endif;
+
+
+
+if ( ! function_exists( 'carbon_lite_jetpack_portfolio_meta' ) ) :
+/**
+ * Prints HTML with meta information for the current JetPack project
+ */
+function carbon_lite_jetpack_portfolio_meta() {
+
+	// Build the Jetpack project type list
+	$project_types = get_the_term_list( get_the_id(), 'jetpack-portfolio-type', '', ', ', '' );
+
+	if ( $project_types ){
+		echo '<span class="posted-on">' . $project_types . '</span>';
+	}
 
 }
 endif;
@@ -171,7 +194,6 @@ endif;
 
 
 
-
 if ( ! function_exists( 'carbon_lite_thumbnail' ) ) :
 /**
  * Echoes the thumbnail of the post or page, if any.
@@ -182,7 +204,6 @@ function carbon_lite_thumbnail( $size = 'carbon-lite-blog-thumbnail' ) {
 	}
 }
 endif;
-
 
 
 
