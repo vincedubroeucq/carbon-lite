@@ -4,8 +4,8 @@ Contributors: vincentdubroeucq
 Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
 Requires at least: 4.7
-Tested up to: 4.8.3
-Stable tag: 1.1.0
+Tested up to: 7.1.0
+Stable tag: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,9 @@ I'll be adding a few options for sure, but not a ton, so as not to make it too c
 
 
 == Changelog ==
+= 1.1.1 - September 2026 =
+* Removed accessibility-ready tag
+
 = 1.1.0 - December 2017 =
 * Added support for JetPack's Portfolio and Testimonial Custom Content Types
 
